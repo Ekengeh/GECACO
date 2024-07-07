@@ -1,0 +1,96 @@
+/* General properties */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Styling the body */
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'josefin sans', sans-serif;
+    color: white;
+}
+/* Styling the container */
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: dimgray;
+}
+/* Styling the navbar-menu */
+.navbar-menu{
+    min-width: 100%;
+    min-height: 6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(3, 3, 3);
+}
+.nav-links{
+    width: 30rem;
+}
+.nav-links ul{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+.nav-links ul li{
+    list-style: none;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-links  ul li :hover{
+    color: rgb(202, 191, 34);
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+    background-image: linear-gradient(to right, rgb(139, 77, 0) 35%, rgb(6, 100, 114) 70%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+}
+/* styling the box-cards */
+.box-cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+}
+/* styling cards */
+.card-1{
+    background-color: rgb(6, 46, 36);
+    width: 30rem;
+    height: 32rem;
+    text-align: center;
+}
+.card-1 p{
+    font-size: x-large;
+}
+.card-1 h2{
+    padding-bottom: 2rem;
+}
+.card-1 h2::before{
+    content: '';
+    padding: 1px 3px;
+    background-color: #d12a00;
+    margin-right: .5rem;
+}
+/* styling copyright */
+.copyright{
+    background-color: rgb(22, 21, 21);
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+}
