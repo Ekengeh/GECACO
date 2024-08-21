@@ -57,6 +57,7 @@ nav .fa {
     width: 200px;
     top: -100vh;
     right: 0;
+    left: 0;
     text-align: left;
     z-index: 2;
     padding: 20px;
@@ -152,7 +153,7 @@ a {
   transform: scaleX(0.98);
 }
 .about-text h2 {
-  color: black;
+  color: white;
 }
 .about-text h2::before {
   content: "";
@@ -161,8 +162,8 @@ a {
   margin-right: 0.5rem;
 }
 .about-text p {
-  color: black;
-  font-size: 1.4rem;
+  color: #F7F7F7;
+  font-size: 1.1rem;
   margin-top: 2rem;
 }
 

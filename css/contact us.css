@@ -14,8 +14,8 @@ body {
 /* Styling the container */
 .container {
   width: 100%;
-  height: 100vh;
-  background-color: dimgray;
+  min-height: 100vh;
+  background-color: rgb(24, 24, 18);
 }
 
 /* Styling the navbar-menu start */
@@ -63,6 +63,7 @@ nav .fa {
     width: 200px;
     top: -100vh;
     right: 0;
+    left: 0;
     text-align: left;
     z-index: 2;
     padding: 20px;
@@ -134,21 +135,188 @@ a {
 
 /* Styling the navbar-menu End */
 
+/* ---------------------Contact-Section------------------------ */
+
+.contact-section {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contact-section h1 {
+  padding-top: 30px;
+  font-size: 30px;
+  color: rgb(2, 49, 77);
+  font-weight: 900;
+  text-align: center;
+}
+.contact-form {
+  padding: 20px 0;
+}
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding-top: 30px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: 2px solid #979393a2;
+  border-radius: 10px;
+  color: #787474a8;
+  font-size: 15px;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #808080;
+  color: white;
+}
+form input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #808080;
+  color: white;
+}
+form input[type="text"]::placeholder {
+  color: rgb(24, 24, 18);
+}
+form input[type="email"]::placeholder {
+  color: rgb(24, 24, 18);
+}
+.form-textarea {
+  margin-top: 30px;
+}
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #78747477;
+  border-radius: 10px;
+  color: #787474a8;
+  font-size: 15px;
+}
+form p {
+  padding: 10px;
+  color: #e74c3c;
+  font-size: small;
+}
+/* ----- */
+.form-control input {
+  width: 300px;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #979393a2;
+  border-radius: 10px;
+  color: #787474a8;
+  font-size: 15px;
+}
+
+/* ------ */
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-contact {
+  margin-top: 40px;
+}
+
+/* -------Button Portfolio */
+.btn-colored {
+  width: 120px;
+  background-color: rgb(2, 49, 77);
+  padding: 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 25px;
+  font-weight: 300;
+  transition: 0.7s;
+}
+
+@media screen and (max-width: 750px) {
+  .form-container {
+    display: block;
+  }
+  form input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  form select {
+    width: 100%;
+  }
+  .contact-section {
+    width: 90%;
+  }
+}
+@media (max-width: 750px) {
+  .btn-contact {
+    left: 20%;
+    transform: translateY(-20%);
+  }
+}
+@media (max-width: 280px) {
+  .btn-contact {
+    width: 120px;
+    padding: 8px;
+    left: 20%;
+    transform: translateY(-20%);
+  }
+  .contact-section h1 {
+    font-size: 18px;
+  }
+}
+
+/* ----------------------------------- */
+
 /* styling the box-cards */
 .box-cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
   width: 100%;
+  background-color: rgb(6, 46, 36);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
   margin: 2rem 0;
 }
+
+/* styling cards */
 .box-cards .card-1 {
-  border-radius: 10px;
-  line-height: 3.5rem;
+  width: 100%;
+  text-align: start;
+  margin-left: 3rem;
+  padding: 1rem;
 }
+.box-cards .card-1 p {
+  font-size: large;
+  margin-top: 1.3rem;
+}
+.box-cards .card-1 h2 {
+  padding-bottom: 2rem;
+}
+.box-cards .card-1 h2::before {
+  content: "";
+  padding: 1px 3px;
+  background-color: #d12a00;
+  margin-right: 0.5rem;
+}
+
+.box-cards .card-2 {
+  width: 100%;
+}
+
 .box-cards .card-2 iframe {
-  border-radius: 10px;
+  width: 100%;
 }
 .box-cards .card-1 p {
   font-size: 1.3rem;
@@ -156,6 +324,7 @@ a {
 
 @media (max-width: 768px) {
   .box-cards {
+    grid-template-columns: repeat(1, 1fr);
     flex-direction: column;
   }
   .box-cards .card-1 {
@@ -164,7 +333,8 @@ a {
     line-height: 3.5rem;
   }
   .box-cards .card-1 p {
-    font-size: 1.3rem;
+    font-size: 1rem;
+    margin-top: 0rem;
   }
   .box-cards .card-2 {
     width: 100%;
@@ -174,25 +344,7 @@ a {
     width: 100%;
   }
 }
-/* styling cards */
-.card-1 {
-  background-color: rgb(6, 46, 36);
-  width: 30rem;
-  height: 32rem;
-  text-align: center;
-}
-.card-1 p {
-  font-size: x-large;
-}
-.card-1 h2 {
-  padding-bottom: 2rem;
-}
-.card-1 h2::before {
-  content: "";
-  padding: 1px 3px;
-  background-color: #d12a00;
-  margin-right: 0.5rem;
-}
+
 /* styling copyright */
 .copyright {
   background-color: rgb(22, 21, 21);
