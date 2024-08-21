@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* body  */
+body {
+  width: auto;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  line-height: 2rem;
+}
+/* navbar-menu */
+.navbar-menu {
+  max-width: 100%;
+  min-height: 6rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(3, 3, 3);
+}
+
+/*  */
+.nav-links .fa {
+  display: none;
+}
+.navbar-menu .menu-icon {
+}
+nav .fa {
+  display: none;
+}
+.navbar-menu .fa {
+  display: none;
+}
+
+@media (max-width: 961px) {
+  .nav-links .fa {
+    display: none;
+  }
+  .navbar-menu .fa {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  ul li {
+    display: block;
+    font-size: 16px;
+    text-align: left;
+    line-height: 40px;
+  }
+  .nav-links {
+    position: absolute;
+    background-color: rgb(24, 24, 18);
+    height: 100vh;
+    width: 200px;
+    top: -100vh;
+    right: 0;
+    left: 0;
+    text-align: left;
+    z-index: 2;
+    padding: 20px;
+    transition: 1s;
+  }
+  .navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar-menu .fa {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links .fa {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 30px;
+  }
+}
+.nav-links {
+  width: 30rem;
+}
+.nav-links ul {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+.nav-links ul li {
+  list-style: none;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-links ul li :hover {
+  color: rgb(202, 191, 34);
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  background-image: linear-gradient(
+    to right,
+    rgb(139, 77, 0) 35%,
+    rgb(6, 100, 114) 70%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+/* about  */
+.About {
+  background-color: #202020;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 6rem;
+}
+
+.about-text {
+}
+.About img {
+  width: 450px;
+  height: 400px;
+  cursor: pointer;
+  padding-right: 4rem;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.About img:hover {
+  transform: scaleY(0.98);
+  transform: scaleX(0.98);
+}
+.about-text h2 {
+  color: white;
+}
+.about-text h2::before {
+  content: "";
+  padding: 1px 3px;
+  background-color: #d12a00;
+  margin-right: 0.5rem;
+}
+.about-text p {
+  color: #F7F7F7;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .About {
+    flex-direction: column;
+    padding: 0rem 0rem;
+  }
+  .About .img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .About img {
+    width: 100%;
+    cursor: pointer;
+    object-fit: cover;
+    padding-right: 0rem;
+  }
+  .about-text {
+    margin: 1rem 2rem;
+  }
+  .about-text p {
+    font-size: 1.2rem;
+  }
+}
+
+/* card-container  */
+.card-container {
+  min-height: 100%;
+  color: white;
+  background-color: rgb(4, 15, 15);
+}
+.card-container h2 {
+  padding-left: 4rem;
+  padding-top: 2rem;
+}
+.card-container h2::before {
+  content: "";
+  padding: 1px 3px;
+  background-color: #d12a00;
+  margin-right: 0.5rem;
+}
+.cards {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  row-gap: 30px;
+  padding: 6rem 4rem;
+  width: auto;
+}
+.C1 {
+  padding: 1rem 0.5rem;
+  background-color: rgb(25, 37, 37);
+  position: relative;
+}
+.C1:hover {
+  transform: scaleY(0.98);
+  transform: scaleX(0.98);
+  cursor: pointer;
+}
+/* footer  */
+.copyright {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0;
+  color: white;
+  position: absolute;
+  width: 100%;
+}
